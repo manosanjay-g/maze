@@ -1,12 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:maze/models/message_model.dart';
-
-import '../helpers.dart';
-import '../widgets/avatar_widget.dart';
+import 'package:maze/widgets/widgets.dart';
 
 class IndividualChatScreen extends StatelessWidget {
-  IndividualChatScreen({Key? key}) : super(key: key);
+  const IndividualChatScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     final args = ModalRoute.of(context)?.settings.arguments as Map;
@@ -67,8 +65,17 @@ class IndividualChatScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
-        child: Text("Chat Screen"),
+      body: ListView(
+        children: [
+          MessageGroup(
+            messageData: messageData,
+            messageGroupDate: "Monday",
+          ),
+          MessageGroup(
+            messageData: messageData,
+            messageGroupDate: "Yesterday",
+          ),
+        ],
       ),
     );
   }
