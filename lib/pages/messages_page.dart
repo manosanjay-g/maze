@@ -51,7 +51,9 @@ class MesssageItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.pushNamed(context, '/individual_chat');
+      },
       child: Container(
         margin: const EdgeInsets.symmetric(
           horizontal: 10,

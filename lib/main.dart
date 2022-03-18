@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:maze/routes.dart';
 
 import 'package:maze/theme.dart';
 import 'screens/screens.dart';
@@ -11,9 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: routes,
       debugShowCheckedModeBanner: false,
       title: 'Chatter',
-      home: const HomeScreen(),
+      initialRoute: '/',
       theme: AppTheme.dark(),
       themeMode: ThemeMode.dark,
     );
