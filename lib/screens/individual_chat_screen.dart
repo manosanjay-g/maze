@@ -65,16 +65,23 @@ class IndividualChatScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: ListView(
+      body: Column(
         children: [
-          MessageGroup(
-            messageData: messageData,
-            messageGroupDate: "Monday",
+          Expanded(
+            child: ListView(
+              children: [
+                MessageGroup(
+                  messageData: messageData,
+                  messageGroupDate: "Monday",
+                ),
+                MessageGroup(
+                  messageData: messageData,
+                  messageGroupDate: "Yesterday",
+                ),
+              ],
+            ),
           ),
-          MessageGroup(
-            messageData: messageData,
-            messageGroupDate: "Yesterday",
-          ),
+          MessageActionBar()
         ],
       ),
     );
