@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:maze/helpers.dart';
 import 'package:maze/models/message_model.dart';
 import 'package:maze/theme.dart';
-import 'package:maze/widgets/avatar_widget.dart';
+import 'package:maze/widgets/core/avatar_widget.dart';
 
 class MessagesPage extends StatelessWidget {
   MessagesPage({Key? key}) : super(key: key);
