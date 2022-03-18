@@ -72,7 +72,7 @@ class IndividualChatScreen extends StatelessWidget {
               children: [
                 MessageGroup(
                   messageData: messageData,
-                  messageGroupDate: "Monday",
+                  messageGroupDate: "Today",
                 ),
                 MessageGroup(
                   messageData: messageData,
