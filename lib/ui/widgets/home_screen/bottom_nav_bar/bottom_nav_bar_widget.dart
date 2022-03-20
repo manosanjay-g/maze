@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:maze/widgets/home_screen/bottom_nav_bar/nav_bar_item_widget.dart';
+import 'package:maze/ui/widgets/home_screen/bottom_nav_bar/nav_bar_item_widget.dart';
 
 class BottomNavBar extends StatelessWidget {
   BottomNavBar(

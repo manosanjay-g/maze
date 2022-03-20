@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:maze/helpers.dart';
 import 'package:maze/theme.dart';
-import 'package:maze/widgets/widgets.dart';
+import 'package:maze/ui/widgets/widgets.dart';
 import '../pages/pages.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -25,8 +25,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final pages = [
     MessagesPage(),
-    CallsPage(),
     ContactsPage(),
+    CallsPage(),
   ];
   @override
   Widget build(BuildContext context) {

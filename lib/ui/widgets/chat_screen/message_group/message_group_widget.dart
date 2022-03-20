@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:maze/models/message_model.dart';
-import 'package:maze/widgets/widgets.dart';
+import 'package:maze/ui/widgets/widgets.dart';
 
 class MessageGroup extends StatelessWidget {
   const MessageGroup(
